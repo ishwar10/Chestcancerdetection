@@ -1,0 +1,320 @@
+[2024-07-19 13:11:54,319: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:11:54,319: ERROR: main: main() takes 0 positional arguments but 1 was given]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+TypeError: main() takes 0 positional arguments but 1 was given
+[2024-07-19 13:15:18,273: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:15:18,273: ERROR: main: name 'BoxValueerror' is not defined]
+Traceback (most recent call last):
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 22, in read_yaml
+    content=yaml.safe_load(yaml_file)
+NameError: name 'yaml' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config=configuration_manager()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\config\configuration.py", line 8, in __init__
+    self.config=read_yaml(config_filepath)
+  File "C:\Users\ishwa\anaconda3\envs\cnnproj\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 25, in read_yaml
+    except BoxValueerror:
+NameError: name 'BoxValueerror' is not defined
+[2024-07-19 13:15:49,571: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:15:49,571: ERROR: main: name 'BoxValueerror' is not defined]
+Traceback (most recent call last):
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 22, in read_yaml
+    content=yaml.safe_load(yaml_file)
+NameError: name 'yaml' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config=configuration_manager()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\config\configuration.py", line 8, in __init__
+    self.config=read_yaml(config_filepath)
+  File "C:\Users\ishwa\anaconda3\envs\cnnproj\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 25, in read_yaml
+    except BoxValueerror:
+NameError: name 'BoxValueerror' is not defined
+[2024-07-19 13:16:54,864: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:16:54,864: ERROR: main: name 'yaml' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config=configuration_manager()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\config\configuration.py", line 8, in __init__
+    self.config=read_yaml(config_filepath)
+  File "C:\Users\ishwa\anaconda3\envs\cnnproj\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 28, in read_yaml
+    raise e
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 22, in read_yaml
+    content=yaml.safe_load(yaml_file)
+NameError: name 'yaml' is not defined
+[2024-07-19 13:18:07,364: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:18:07,364: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:18:07,364: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:18:07,364: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 25, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 259, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config=configuration_manager()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\config\configuration.py", line 9, in __init__
+    self.params=read_yaml(param_filepath)
+  File "C:\Users\ishwa\anaconda3\envs\cnnproj\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 27, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-07-19 13:19:27,741: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:19:27,741: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:19:27,741: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:19:27,741: ERROR: main: module 'os' has no attribute 'mkdirs']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config=configuration_manager()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\config\configuration.py", line 10, in __init__
+    create_directories([self.config.artifacts_root])
+  File "C:\Users\ishwa\anaconda3\envs\cnnproj\lib\site-packages\ensure\main.py", line 807, in __call__
+    return self.f(*args, **kwargs)
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 36, in create_directories
+    os.mkdirs(path, exist_ok=true)
+AttributeError: module 'os' has no attribute 'mkdirs'
+[2024-07-19 13:20:16,289: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:20:16,289: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:20:16,289: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:20:16,289: ERROR: main: name 'true' is not defined]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config=configuration_manager()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\config\configuration.py", line 10, in __init__
+    create_directories([self.config.artifacts_root])
+  File "C:\Users\ishwa\anaconda3\envs\cnnproj\lib\site-packages\ensure\main.py", line 807, in __call__
+    return self.f(*args, **kwargs)
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 36, in create_directories
+    os.mkdir(path, exist_ok=true)
+NameError: name 'true' is not defined
+[2024-07-19 13:20:33,928: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:20:33,928: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:20:33,928: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:20:33,928: ERROR: main: 'exist_ok' is an invalid keyword argument for mkdir()]
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 11, in main
+    config=configuration_manager()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\config\configuration.py", line 10, in __init__
+    create_directories([self.config.artifacts_root])
+  File "C:\Users\ishwa\anaconda3\envs\cnnproj\lib\site-packages\ensure\main.py", line 807, in __call__
+    return self.f(*args, **kwargs)
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 36, in create_directories
+    os.mkdir(path, exist_ok=True)
+TypeError: 'exist_ok' is an invalid keyword argument for mkdir()
+[2024-07-19 13:22:08,552: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:22:08,552: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:22:08,552: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:22:08,552: INFO: commons: created directory at:artifacts]
+[2024-07-19 13:22:08,552: ERROR: main: "'ConfigBox' object has no attribute 'source_url'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\config\configuration.py", line 16, in get_data_ingestion_config
+    source_url=config.source_url,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+[2024-07-19 13:30:17,694: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:30:17,694: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:30:17,694: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:30:17,694: INFO: commons: created directory at:artifacts]
+[2024-07-19 13:30:17,694: ERROR: main: __init__() got an unexpected keyword argument 'root_dir']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\config\configuration.py", line 14, in get_data_ingestion_config
+    data__ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'root_dir'
+[2024-07-19 13:34:11,524: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:34:11,540: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:34:11,540: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:34:11,540: INFO: commons: created directory at:artifacts]
+[2024-07-19 13:34:11,540: ERROR: main: __init__() got an unexpected keyword argument 'root_dir']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 12, in main
+    data_ingestion_config=config.get_data_ingestion_config()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\config\configuration.py", line 14, in get_data_ingestion_config
+    data__ingestion_config=DataIngestionConfig(
+TypeError: __init__() got an unexpected keyword argument 'root_dir'
+[2024-07-19 13:35:26,662: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:35:26,662: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:35:26,662: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:35:26,662: INFO: commons: created directory at:artifacts]
+[2024-07-19 13:35:26,662: ERROR: main: type object 'DataIngestionConfig' has no attribute 'download_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion=data_ingestion_config.download_file()
+AttributeError: type object 'DataIngestionConfig' has no attribute 'download_file'
+[2024-07-19 13:38:54,318: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:38:54,318: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:38:54,318: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:38:54,318: INFO: commons: created directory at:artifacts]
+[2024-07-19 13:38:54,318: ERROR: main: type object 'DataIngestion' has no attribute 'download_file']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion=DataIngestion.download_file()
+AttributeError: type object 'DataIngestion' has no attribute 'download_file'
+[2024-07-19 13:40:42,604: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:40:42,604: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:40:42,604: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:40:42,604: INFO: commons: created directory at:artifacts]
+[2024-07-19 13:40:42,604: ERROR: main: downloadfile() missing 1 required positional argument: 'self']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion=DataIngestion.downloadfile()
+TypeError: downloadfile() missing 1 required positional argument: 'self'
+[2024-07-19 13:45:27,752: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:45:27,752: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:45:27,758: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:45:27,758: INFO: commons: created directory at:artifacts]
+[2024-07-19 13:45:27,758: ERROR: main: __init__() missing 1 required positional argument: 'config']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion=DataIngestion()
+TypeError: __init__() missing 1 required positional argument: 'config'
+[2024-07-19 13:46:48,225: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:46:48,225: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:46:48,225: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:46:48,225: INFO: commons: created directory at:artifacts]
+[2024-07-19 13:46:48,225: ERROR: main: type object 'DataIngestionConfig' has no attribute 'source_url']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.downloadfile()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\components\data_ingestion.py", line 23, in downloadfile
+    raise e
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\components\data_ingestion.py", line 14, in downloadfile
+    dataset_url=self.config.source_url
+AttributeError: type object 'DataIngestionConfig' has no attribute 'source_url'
+[2024-07-19 13:54:04,666: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 13:54:04,668: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 13:54:04,669: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 13:54:04,669: INFO: commons: created directory at:artifacts]
+[2024-07-19 13:54:04,669: ERROR: main: type object 'DataIngestionConfig' has no attribute 'source_url']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.downloadfile()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\components\data_ingestion.py", line 23, in downloadfile
+    raise e
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\components\data_ingestion.py", line 14, in downloadfile
+    dataset_url=self.config.source_url
+AttributeError: type object 'DataIngestionConfig' has no attribute 'source_url'
+[2024-07-19 14:06:23,819: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 14:06:23,819: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 14:06:23,819: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 14:06:23,819: INFO: commons: created directory at:artifacts]
+[2024-07-19 14:06:23,819: INFO: commons: created directory at:artifacts/data_ingestion]
+[2024-07-19 14:06:23,819: ERROR: main: type object 'DataIngestionConfig' has no attribute 'source_url']
+Traceback (most recent call last):
+  File "main.py", line 9, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    data_ingestion.downloadfile()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\components\data_ingestion.py", line 23, in downloadfile
+    raise e
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\components\data_ingestion.py", line 14, in downloadfile
+    dataset_url=self.config.source_url
+AttributeError: type object 'DataIngestionConfig' has no attribute 'source_url'
+[2024-07-19 14:07:37,646: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-19 14:07:37,662: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-19 14:07:37,662: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-19 14:07:37,662: INFO: commons: created directory at:artifacts]
+[2024-07-19 14:07:37,662: INFO: commons: created directory at:artifacts/data_ingestion]
+[2024-07-19 14:07:37,662: INFO: data_ingestion: downloading data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-19 14:07:48,686: INFO: data_ingestion: downloaded data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-19 14:07:48,973: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<]
