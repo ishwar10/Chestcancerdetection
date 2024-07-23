@@ -7,7 +7,7 @@ import time
 from pathlib import Path
 
 class training:
-    def __init_(self,config:TrainingConfig):
+    def __init__(self,config:TrainingConfig):
         self.config=config
 
     def get_base_model(self):

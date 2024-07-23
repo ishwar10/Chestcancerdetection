@@ -402,3 +402,73 @@ Traceback (most recent call last):
   File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_03_model_trainer.py", line 18, in main
     training = training(config=training_config)
 UnboundLocalError: local variable 'training' referenced before assignment
+[2024-07-23 14:51:11,387: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-23 14:51:11,390: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-23 14:51:11,391: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-23 14:51:11,392: INFO: commons: created directory at:artifacts]
+[2024-07-23 14:51:11,392: INFO: commons: created directory at:artifacts/data_ingestion]
+[2024-07-23 14:51:11,393: INFO: data_ingestion: downloading data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-23 14:51:17,963: INFO: data_ingestion: downloaded data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-23 14:51:18,304: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-07-23 14:51:18,304: INFO: main: *******************]
+[2024-07-23 14:51:18,304: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-07-23 14:51:18,312: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-23 14:51:18,313: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-23 14:51:18,313: INFO: commons: created directory at:artifacts]
+[2024-07-23 14:51:18,313: INFO: commons: created directory at:artifacts/prepare_base_model]
+[2024-07-23 14:51:18,635: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-23 14:51:18,869: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-07-23 14:51:18,870: INFO: main: *******************]
+[2024-07-23 14:51:18,870: INFO: main: >>>>>> stage Model_training started <<<<<<]
+[2024-07-23 14:51:18,872: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-23 14:51:18,873: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-23 14:51:18,874: INFO: commons: created directory at:artifacts]
+[2024-07-23 14:51:18,874: INFO: commons: created directory at:artifacts\training]
+[2024-07-23 14:51:18,874: ERROR: main: training() takes no arguments]
+Traceback (most recent call last):
+  File "main.py", line 36, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_03_model_trainer.py", line 18, in main
+    training_1 = training(config=training_config)
+TypeError: training() takes no arguments
+[2024-07-23 17:28:19,280: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-23 17:28:19,289: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-23 17:28:19,289: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-23 17:28:19,289: INFO: commons: created directory at:artifacts]
+[2024-07-23 17:28:19,289: INFO: commons: created directory at:artifacts/data_ingestion]
+[2024-07-23 17:28:19,289: INFO: data_ingestion: downloading data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-23 17:28:27,906: INFO: data_ingestion: downloaded data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-23 17:28:28,168: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-07-23 17:28:28,168: INFO: main: *******************]
+[2024-07-23 17:28:28,168: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-07-23 17:28:28,183: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-23 17:28:28,183: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-23 17:28:28,183: INFO: commons: created directory at:artifacts]
+[2024-07-23 17:28:28,183: INFO: commons: created directory at:artifacts/prepare_base_model]
+[2024-07-23 17:28:28,464: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-23 17:28:28,607: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-07-23 17:28:28,608: INFO: main: *******************]
+[2024-07-23 17:28:28,608: INFO: main: >>>>>> stage Model_training started <<<<<<]
+[2024-07-23 17:28:28,610: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-23 17:28:28,612: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-23 17:28:28,612: INFO: commons: created directory at:artifacts]
+[2024-07-23 17:28:28,613: INFO: commons: created directory at:artifacts\training]
+[2024-07-23 17:28:44,866: INFO: main: >>>>>> stage Model_training completed <<<<<<
+
+x==========x]
+[2024-07-23 17:28:44,867: INFO: main: *******************]
+[2024-07-23 17:28:44,867: INFO: main: >>>>>> stage model_Evaluation started <<<<<<]
+[2024-07-23 17:28:44,869: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-23 17:28:44,870: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-23 17:28:44,870: INFO: commons: created directory at:artifacts]
+[2024-07-23 17:28:44,870: ERROR: main: 'configuration_manager' object has no attribute 'get_evaluation_config']
+Traceback (most recent call last):
+  File "main.py", line 48, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_04_model_evaluation.py", line 16, in main
+    eval_config = config.get_evaluation_config()
+AttributeError: 'configuration_manager' object has no attribute 'get_evaluation_config'
