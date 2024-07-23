@@ -371,3 +371,34 @@ AttributeError: 'configuration_manager' object has no attribute 'get_prepare_bas
 [2024-07-22 15:01:04,862: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2024-07-23 14:47:55,218: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-23 14:47:55,221: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-23 14:47:55,224: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-23 14:47:55,224: INFO: commons: created directory at:artifacts]
+[2024-07-23 14:47:55,225: INFO: commons: created directory at:artifacts/data_ingestion]
+[2024-07-23 14:47:55,225: INFO: data_ingestion: downloading data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-23 14:48:06,127: INFO: data_ingestion: downloaded data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-23 14:48:06,464: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-07-23 14:48:06,464: INFO: main: *******************]
+[2024-07-23 14:48:06,464: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-07-23 14:48:06,464: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-23 14:48:06,464: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-23 14:48:06,464: INFO: commons: created directory at:artifacts]
+[2024-07-23 14:48:06,464: INFO: commons: created directory at:artifacts/prepare_base_model]
+[2024-07-23 14:48:06,921: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-23 14:48:07,159: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-07-23 14:48:07,159: INFO: main: *******************]
+[2024-07-23 14:48:07,160: INFO: main: >>>>>> stage Model_training started <<<<<<]
+[2024-07-23 14:48:07,161: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-23 14:48:07,162: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-23 14:48:07,163: INFO: commons: created directory at:artifacts]
+[2024-07-23 14:48:07,164: INFO: commons: created directory at:artifacts\training]
+[2024-07-23 14:48:07,164: ERROR: main: local variable 'training' referenced before assignment]
+Traceback (most recent call last):
+  File "main.py", line 36, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_03_model_trainer.py", line 18, in main
+    training = training(config=training_config)
+UnboundLocalError: local variable 'training' referenced before assignment

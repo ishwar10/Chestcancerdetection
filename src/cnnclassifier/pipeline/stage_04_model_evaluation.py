@@ -1,4 +1,4 @@
-from cnnclassifier.config.configuration import ConfigurationManager
+from cnnclassifier.config.configuration import configuration_manager
 from cnnclassifier.components.model_evaluation import Evaluation
 from cnnclassifier import logger
 
@@ -12,7 +12,7 @@ class EvaluationPipeline:
         pass
 
     def main(self):
-        config = ConfigurationManager()
+        config = configuration_manager()
         eval_config = config.get_evaluation_config()
         evaluation = Evaluation(eval_config)
         evaluation.evaluation()

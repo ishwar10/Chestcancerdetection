@@ -2,6 +2,8 @@ from cnnclassifier import logger
 from cnnclassifier.pipeline.stage_01_data_ingestion import data_ingestion_training_pipeline
 from cnnclassifier.pipeline.stage_02_prepare_base_model import PrepareBaseModelTrainingPipeline
 from cnnclassifier.pipeline.stage_03_model_trainer import ModelTrainingPipeline
+from cnnclassifier.pipeline.stage_04_model_evaluation import EvaluationPipeline
+
 
 STAGE_NAME="Data Ingestion Stage"
 

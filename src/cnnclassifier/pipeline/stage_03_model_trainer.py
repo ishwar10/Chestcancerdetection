@@ -15,10 +15,10 @@ class ModelTrainingPipeline:
     def main(self):
         config = configuration_manager()
         training_config = config.training_config()
-        training = training(config=training_config)
-        training.get_base_model()
-        training.train_valid_generator()
-        training.train()
+        training_1 = training(config=training_config)
+        training_1.get_base_model()
+        training_1.train_valid_generator()
+        training_1.train()
 
 
 
