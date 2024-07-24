@@ -646,3 +646,13 @@ Traceback (most recent call last):
   File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 47, in save_json
     logger.info(f"json file saved at{path_to_json}")
 NameError: name 'path_to_json' is not defined
+[2024-07-24 14:13:53,510: INFO: stage_04_model_evaluation: *******************]
+[2024-07-24 14:13:53,510: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-07-24 14:13:53,510: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 14:13:53,510: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 14:13:53,510: INFO: commons: created directory at:artifacts]
+[2024-07-24 14:13:58,697: INFO: commons: json file saved atscores.json]
+[2024-07-24 14:13:58,697: INFO: commons: json file saved atscores.json]
+[2024-07-24 14:13:58,697: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
