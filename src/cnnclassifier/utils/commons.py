@@ -44,7 +44,7 @@ def save_json(path:Path,data:dict):
     with open(path,"w") as f:
         json.dump(data,f,indent=4)
 
-    logger.info(f"json file saved at{path_to_json}")
+    logger.info(f"json file saved at{path}")
 
 @ensure_annotations
 def save_bin(data: Any, path: Path):

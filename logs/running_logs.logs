@@ -626,3 +626,23 @@ x==========x]
 [2024-07-24 14:04:53,776: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-07-24 14:10:14,369: INFO: stage_04_model_evaluation: *******************]
+[2024-07-24 14:10:14,369: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-07-24 14:10:14,369: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 14:10:14,369: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 14:10:14,369: INFO: commons: created directory at:artifacts]
+[2024-07-24 14:10:19,525: ERROR: stage_04_model_evaluation: name 'path_to_json' is not defined]
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 30, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\components\model_evaluation.py", line 49, in evaluation
+    self.save_score()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\components\model_evaluation.py", line 53, in save_score
+    save_json(path=Path("scores.json"), data=scores)
+  File "C:\Users\ishwa\anaconda3\envs\cnnproj\lib\site-packages\ensure\main.py", line 807, in __call__
+    return self.f(*args, **kwargs)
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\utils\commons.py", line 47, in save_json
+    logger.info(f"json file saved at{path_to_json}")
+NameError: name 'path_to_json' is not defined
