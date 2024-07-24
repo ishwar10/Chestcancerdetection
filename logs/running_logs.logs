@@ -472,3 +472,120 @@ Traceback (most recent call last):
   File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_04_model_evaluation.py", line 16, in main
     eval_config = config.get_evaluation_config()
 AttributeError: 'configuration_manager' object has no attribute 'get_evaluation_config'
+[2024-07-24 10:41:58,787: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-24 10:41:58,787: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 10:41:58,794: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 10:41:58,794: INFO: commons: created directory at:artifacts]
+[2024-07-24 10:41:58,794: INFO: commons: created directory at:artifacts/data_ingestion]
+[2024-07-24 10:41:58,794: INFO: data_ingestion: downloading data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-24 10:42:12,799: INFO: data_ingestion: downloaded data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-24 10:42:13,126: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-07-24 10:42:13,126: INFO: main: *******************]
+[2024-07-24 10:42:13,126: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-07-24 10:42:13,126: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 10:42:13,126: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 10:42:13,126: INFO: commons: created directory at:artifacts]
+[2024-07-24 10:42:13,126: INFO: commons: created directory at:artifacts/prepare_base_model]
+[2024-07-24 10:42:13,611: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-24 10:42:13,823: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-07-24 10:42:13,823: INFO: main: *******************]
+[2024-07-24 10:42:13,823: INFO: main: >>>>>> stage Model_training started <<<<<<]
+[2024-07-24 10:42:13,830: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 10:42:13,830: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 10:42:13,830: INFO: commons: created directory at:artifacts]
+[2024-07-24 10:42:13,830: INFO: commons: created directory at:artifacts\training]
+[2024-07-24 10:42:35,486: INFO: main: >>>>>> stage Model_training completed <<<<<<
+
+x==========x]
+[2024-07-24 10:42:35,486: INFO: main: *******************]
+[2024-07-24 10:42:35,486: INFO: main: >>>>>> stage model_Evaluation started <<<<<<]
+[2024-07-24 10:42:35,486: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 10:42:35,486: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 10:42:35,486: INFO: commons: created directory at:artifacts]
+[2024-07-24 10:42:42,370: ERROR: main: save_json() got an unexpected keyword argument 'path']
+Traceback (most recent call last):
+  File "main.py", line 48, in <module>
+    obj.main()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\pipeline\stage_04_model_evaluation.py", line 18, in main
+    evaluation.evaluation()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\components\model_evaluation.py", line 49, in evaluation
+    self.save_score()
+  File "c:\users\ishwa\chestcancerdetection\src\cnnclassifier\components\model_evaluation.py", line 53, in save_score
+    save_json(path=Path("scores.json"), data=scores)
+  File "C:\Users\ishwa\anaconda3\envs\cnnproj\lib\site-packages\ensure\main.py", line 807, in __call__
+    return self.f(*args, **kwargs)
+TypeError: save_json() got an unexpected keyword argument 'path'
+[2024-07-24 10:51:03,188: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-24 10:51:03,191: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 10:51:03,193: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 10:51:03,193: INFO: commons: created directory at:artifacts]
+[2024-07-24 10:51:03,194: INFO: commons: created directory at:artifacts/data_ingestion]
+[2024-07-24 10:51:03,194: INFO: data_ingestion: downloading data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-24 10:51:15,330: INFO: data_ingestion: downloaded data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-24 10:51:15,682: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-07-24 10:51:15,682: INFO: main: *******************]
+[2024-07-24 10:51:15,682: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-07-24 10:51:15,682: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 10:51:15,698: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 10:51:15,698: INFO: commons: created directory at:artifacts]
+[2024-07-24 10:51:15,698: INFO: commons: created directory at:artifacts/prepare_base_model]
+[2024-07-24 10:51:16,081: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-24 10:51:16,298: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-07-24 10:51:16,299: INFO: main: *******************]
+[2024-07-24 10:51:16,299: INFO: main: >>>>>> stage Model_training started <<<<<<]
+[2024-07-24 10:51:16,301: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 10:51:16,303: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 10:51:16,303: INFO: commons: created directory at:artifacts]
+[2024-07-24 10:51:16,304: INFO: commons: created directory at:artifacts\training]
+[2024-07-24 10:51:40,528: INFO: main: >>>>>> stage Model_training completed <<<<<<
+
+x==========x]
+[2024-07-24 10:51:40,528: INFO: main: *******************]
+[2024-07-24 10:51:40,528: INFO: main: >>>>>> stage model_Evaluation started <<<<<<]
+[2024-07-24 10:51:40,533: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 10:51:40,536: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 10:51:40,536: INFO: commons: created directory at:artifacts]
+[2024-07-24 10:51:48,203: INFO: main: >>>>>> stage model_Evaluation completed <<<<<<
+
+x==========x]
+[2024-07-24 11:05:33,435: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2024-07-24 11:05:33,435: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 11:05:33,435: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 11:05:33,451: INFO: commons: created directory at:artifacts]
+[2024-07-24 11:05:33,451: INFO: commons: created directory at:artifacts/data_ingestion]
+[2024-07-24 11:05:33,451: INFO: data_ingestion: downloading data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-24 11:05:40,455: INFO: data_ingestion: downloaded data fromhttps://drive.google.com/file/d/1z0mreUtRmR-P-magILsDR3T7M6IkGXtY/view?usp=sharing in artifacts/data_ingestion/data.zip]
+[2024-07-24 11:05:40,789: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<]
+[2024-07-24 11:05:40,790: INFO: main: *******************]
+[2024-07-24 11:05:40,790: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-07-24 11:05:40,792: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 11:05:40,794: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 11:05:40,794: INFO: commons: created directory at:artifacts]
+[2024-07-24 11:05:40,795: INFO: commons: created directory at:artifacts/prepare_base_model]
+[2024-07-24 11:05:41,152: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-24 11:05:41,369: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-07-24 11:05:41,370: INFO: main: *******************]
+[2024-07-24 11:05:41,370: INFO: main: >>>>>> stage Model_training started <<<<<<]
+[2024-07-24 11:05:41,370: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 11:05:41,370: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 11:05:41,370: INFO: commons: created directory at:artifacts]
+[2024-07-24 11:05:41,376: INFO: commons: created directory at:artifacts\training]
+[2024-07-24 11:06:06,124: INFO: main: >>>>>> stage Model_training completed <<<<<<
+
+x==========x]
+[2024-07-24 11:06:06,124: INFO: main: *******************]
+[2024-07-24 11:06:06,124: INFO: main: >>>>>> stage model_Evaluation started <<<<<<]
+[2024-07-24 11:06:06,131: INFO: commons: yaml file :config\config.yaml loaded successfully]
+[2024-07-24 11:06:06,131: INFO: commons: yaml file :params.yaml loaded successfully]
+[2024-07-24 11:06:06,131: INFO: commons: created directory at:artifacts]
+[2024-07-24 11:06:16,503: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-07-24 11:06:16,965: INFO: builder_impl: Assets written to: C:\Users\ishwa\AppData\Local\Temp\tmp5jt_w1lp\model\data\model\assets]
+[2024-07-24 11:06:43,946: INFO: main: >>>>>> stage model_Evaluation completed <<<<<<
+
+x==========x]
