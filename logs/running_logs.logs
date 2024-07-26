@@ -656,3 +656,21 @@ NameError: name 'path_to_json' is not defined
 [2024-07-24 14:13:58,697: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-07-24 22:23:55,156: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.106:8080]
+[2024-07-24 22:23:55,156: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-24 22:24:10,817: INFO: _internal: 192.168.0.106 - - [24/Jul/2024 22:24:10] "GET / HTTP/1.1" 200 -]
+[2024-07-24 22:42:06,873: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.106:8080]
+[2024-07-24 22:42:06,873: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-24 22:42:14,466: INFO: _internal: 192.168.0.106 - - [24/Jul/2024 22:42:14] "GET / HTTP/1.1" 200 -]
+[2024-07-24 22:44:26,062: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.106:8080]
+[2024-07-24 22:44:26,062: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-07-24 22:44:37,726: INFO: _internal: 192.168.0.106 - - [24/Jul/2024 22:44:37] "GET / HTTP/1.1" 200 -]
